@@ -22,18 +22,31 @@
             </div>
 
         </header>
+        {% for i in library %}
+            <div class="lib">
+                <h2 class="minititle1">Библиотека</h2>
 
-        <div class="lib">
-            <h2 class="minititle1">Библиотека</h2>
-
-            <div class="new">
-                <div class="iconq">
-                    <h1 class="ico1">Q</h1>
-                    <h1 class="ico2">B</h1>
+                <div class="new">
+                    <div class="iconq">
+                        <h1 class="ico1">Q</h1>
+                        <h1 class="ico2">B</h1>
+                    </div>
+                    <h3 class="mnt">{{ i.title }}</h3>
+                    <img class="start_button" src="/static/images/play.png">
                 </div>
-                <h3 class="mnt">Тест по алгебре</h3>
-                <img class="start_button" src="/static/images/play.png">
-            </div>
+        {% end %}
+
+<!--        <div class="lib">-->
+<!--            <h2 class="minititle1">Библиотека</h2>-->
+
+<!--            <div class="new">-->
+<!--                <div class="iconq">-->
+<!--                    <h1 class="ico1">Q</h1>-->
+<!--                    <h1 class="ico2">B</h1>-->
+<!--                </div>-->
+<!--                <h3 class="mnt">Тест по алгебре</h3>-->
+<!--                <img class="start_button" src="/static/images/play.png">-->
+<!--            </div>-->
 
 <!--            <footer>-->
 <!--                <p class="fotg">inrob@inbox.ru</p>-->
